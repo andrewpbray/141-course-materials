@@ -6,7 +6,14 @@
 
 ### Monday
 
-No class
+- Descriptive and Inferential Statistics
+- Course Logistics
+- **By Wednesday**
+    - Join (Slack)[(https://join.slack.com/t/reed-stats-ds/shared_invite/enQtOTEwMDQyODkzNjUwLTM1MWNjZjQ5NTA5ZmMyMmQ4ZjhhYTk1Y2ZkMDE0NjRlZDBhMmE4OTg4OWJjNWUzNTFlOGIzYjE5NjA0ZmM0YzM)
+        - Introduce yourself with 1 truth and 1 lie
+        - Reply to a post and guess the truth
+        - Send me a direct message saying hi
+        - Respond to the poll
 
 ### Wednesday
 
@@ -14,13 +21,13 @@ No class
 
 ### Thursday Lab
 
-No lab
+Lab TBA
 
 ### Friday
 
-- Notes on the lab
-- Course Logistics
-- Observations and Theories ([slides](https://github.com/intro-stats/course-materials/blob/master/slides/week-01/observations-and-theories.pdf))
+- Taxonomy of Data
+- Reading: OI 1.1, 1.2
+
 - **For next time**
     - Join slack group/channel and count off
     - Read p. 1 - 16
