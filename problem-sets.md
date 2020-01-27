@@ -9,4 +9,4 @@ Problem set guidelines:
 2. pdfs should be submitted via gradescope.
 3. Problem sets are practice. A good problem set will not only have the correct answers, it will be presented in a clean and easily understood way. Read over your pdf before submitting to be sure you're proud of it.
 
-**PS1**: Please work through problems 1, 4, 6, 8, 10, 11, 15, 16, and 17 in the Exercises at the end of Chapter 1 (the first one is labeled 1.1 on page 43).
+**PS1**: Will be listed here next week.
