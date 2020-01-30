@@ -29,5 +29,4 @@ Lab 0: Getting Started (due Friday 8 pm)
 - Reading: OI 1.1, 1.2
 
 - **For next time**
-    - Read p. 1 - 16
     - Finish and submit Lab 0
