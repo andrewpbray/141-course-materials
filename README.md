@@ -21,7 +21,7 @@ No class
 
 ### Thursday Lab
 
-Lab TBA
+Lab 0: Getting Started (due Friday 8 pm)
 
 ### Friday
 
@@ -29,6 +29,5 @@ Lab TBA
 - Reading: OI 1.1, 1.2
 
 - **For next time**
-    - Join slack group/channel and count off
     - Read p. 1 - 16
-    - Work on Lab, Problem Set
+    - Finish and submit Lab 0
