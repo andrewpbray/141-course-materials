@@ -1,6 +1,6 @@
 ---
 title: "Lab 0: Getting Started with RStudio and RMarkdown"
-output: pdf_document
+output: md_document
 ---
 
 ```{r global_options, include=FALSE}
