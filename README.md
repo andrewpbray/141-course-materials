@@ -2,6 +2,16 @@
 
 ![](slides/files/minard.png)
 
+
+## Week 2
+
+### Monday
+
+- Reading: Modern Dive 2.1-2.4
+
+
+* * *
+
 ## Week 1
 
 ### Monday
