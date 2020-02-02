@@ -36,6 +36,18 @@ Secondary: [Modern Dive](https://moderndive.com/) by Ismay and Kim available fre
 This course has three components: Problem Sets, Labs, and Exams/Quizzes. For details
 on the first two, see the tabs at the top of the page.
 
+#### Problem Sets
+
+Weekly problem sets to reinforce the concepts from the reading as
+well as the material that we address in class. You're encouraged to work on the problem sets with fellow students, though you'll both need to turn in your own work.
+
+Problem set guidelines:
+
+- All problem sets should be written in RMarkdown files and knitted to pdf.
+- pdfs should be submitted via gradescope.
+- Problem sets are practice, both with the statistical concepts and with the process of producing a polished document. A good problem set will not only have the correct answers, it will be presented in a clean and easily understood way. Read over your pdf before submitting to be sure you're proud of it.
+
+
 #### Exams
 
 We'll have several examinations and quizzes throughout the semester in order to challenge your understanding and provide me with a sense of where you're at. Some will be more traditional pen and paper and others are to be done with the computer using R.
