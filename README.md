@@ -8,6 +8,22 @@
 ### Monday
 
 - Reading: Modern Dive 2.1-2.4
+- A Grammar of Graphics
+
+### Wednesday
+
+- Reading: Modern Dive 
+- Canonical Plots
+- PS 1 due tonight at 8 pm
+
+### Thursday
+
+- Lab 1: Data Visualization
+
+### Friday
+
+- Describing Data
+
 
 
 * * *
