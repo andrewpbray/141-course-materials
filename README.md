@@ -12,7 +12,7 @@
 
 ### Wednesday
 
-- Reading: Modern Dive 
+- Reading: Modern Dive 2.4-2.8
 - Canonical Plots
 - PS 1 due tonight at 8 pm
 
@@ -22,6 +22,7 @@
 
 ### Friday
 
+- Reading: OI 1.6, 1.7
 - Describing Data
 
 
