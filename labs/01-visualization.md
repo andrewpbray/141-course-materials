@@ -58,7 +58,8 @@ case with `geom_smooth()` and `geom_point()` to create scatter plots
 with trend lines.
 
 1.  Create a density plot for the number of colleges applied to. Please
-    describe this distribution in terms of shape, center, and spread.
+    describe this distribution in terms of its shape, center, and
+    spread.
 
 ## Filtering Data
 
