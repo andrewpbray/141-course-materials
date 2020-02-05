@@ -14,6 +14,7 @@
 
 - Reading: Modern Dive 2.4-2.8
 - Canonical Plots
+- Describing Data
 - PS 1 due tonight at 8 pm
 
 ### Thursday
@@ -23,7 +24,8 @@
 ### Friday
 
 - Reading: OI 1.6, 1.7
-- Describing Data
+- Data Visualization in Practice
+- Short Quiz: Data Visualization
 
 
 
