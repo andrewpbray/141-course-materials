@@ -27,6 +27,7 @@ ggplot(twitter_presidents, aes(x = user,
                                y = retweets)) +
   geom_boxplot() +
   scale_y_log10() +
+  coord_flip() +
   theme_fivethirtyeight() +
   labs(x = "President", y = "Retweets (log scale)") +
   ggtitle("Obama and Trump Retweets", subtitle = "(log scale)")
