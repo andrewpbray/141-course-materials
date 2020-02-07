@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Data Visualization in Practice</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css-0.0.1/fc.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/fc-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="reed.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Visualization in Practice
+
+---
+
+
+
+
+# Fine-tuning graphics
+
+&lt;img src="data-viz-in-practice_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+# Fine-tuning graphics
+--
+
+&lt;img src="data-viz-in-practice_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Lessons in Practical Data Viz
+--
+
+1. Compare multiple `geoms` to see which one captures best the structure you're looking to emphasize.
+
+2. Add clear/informative axis labels (or titles).
+
+3. Think carefully about your scales (log-transform, palettes)
+
+4. Don't be constrained by your code - ask for help!
+
+---
+# Your turn
+--
+
+Sketch the data frame and code that would create:
+
+--
+
+&lt;img src="figs/lonely-bar-chart.png" width="650" style="display: block; margin: auto;" /&gt;
+
+---
+# Lessons in Practical Data Viz
+
+1. Compare multiple `geoms` to see which one captures best the structure you're looking to emphasize.
+
+2. Add clear/informative axis labels (or titles).
+
+3. Think carefully about your scales (log-transform, palettes).
+
+4. Don't be constrained by your code - ask for help!
+
+--
+
+5. Be sure you understand - and faithfully convey - the unit of obs.
+
+6. Use the taxonomy of data to guide your viz.
+
+---
+# Which line is the most meaningful?
+--
+
+&lt;img src="figs/cancer-age.png" width="800" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Which line is the most meaningful?
+
+.pull-left[
+&lt;img src="figs/cancer-age.png" width="350" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+.pull-right[
+**Cancer Deaths**: sheer number of people that have died each year of cancer worldwide relative to the number in 1990.
+
+**Cancer Death Rate**: number of people that die of cancer in a year divided by global population.
+
+** Age-standardized Death Rate**: adjusts the death rate to account for changes in the age-demongraphics.
+]
+
+
+---
+# Trump's Boom
+
+&lt;img src="figs/trump-liar.png" width="800" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Trump's Boom
+
+&lt;img src="figs/trump-econ.png" width="800" style="display: block; margin: auto;" /&gt;
+
+---
+# Lessons in Practical Data Viz
+
+1. Compare multiple `geoms` to see which one captures best the structure you're looking to emphasize.
+
+2. Add clear/informative axis labels (or titles).
+
+3. Think carefully about your scales (log-transform, palettes).
+
+4. Don't be constrained by your code - ask for help!
+
+5. Be sure you understand the unit of observation.
+
+6. Use the taxonomy of data to guide your viz.
+
+7. Context effects interpretation: normalize data, don't cherry pick
+
+---
+# What is the cause of this structure?
+
+&lt;img src="figs/kidney-high.png" width="800" style="display: block; margin: auto;" /&gt;
+
+---
+# What is the cause of this structure?
+
+&lt;img src="figs/kidney-low.png" width="800" style="display: block; margin: auto;" /&gt;
+
+---
+# Lessons in Practical Data Viz
+
+1. Compare multiple `geoms` to see which one captures best the structure you're looking to emphasize.
+
+2. Add clear/informative axis labels (or titles).
+
+3. Think carefully about your scales (log-transform, palettes).
+
+4. Don't be constrained by your code - ask for help!
+
+5. Be sure you understand the unit of observation.
+
+6. Use the taxonomy of data to guide your viz.
+
+7. Context effects interpretation: normalize data, don't cherry pick.
+
+8. Be sure the structure in your visualization is the structure you want to convey.
+
+---
+# Proportion of boys born in the US
+
+--
+
+&lt;img src="data-viz-in-practice_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+
+--
+
+**Story**: The proportion of boys has been dropping over the last 60 years.
+
+---
+# Proportion of boys born in the US
+
+&lt;img src="data-viz-in-practice_files/figure-html/unnamed-chunk-11-1.png" style="display: block; margin: auto;" /&gt;
+
+--
+
+**Story**: There have consistently been more boys born in the US than girls.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "atelier-forest-light",
+"highlightLines": true,
+"highlightSpans": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
