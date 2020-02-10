@@ -3,6 +3,30 @@
 ![](slides/files/minard.png)
 
 
+## Week 3
+
+### Monday
+
+- Reading: OI 1.3
+- Principles of Data Collection
+- Sampling
+
+### Wednesday
+
+- Reading: OI 1.4
+- Experimental Design
+- PS 2 due tonight at 8 pm
+
+### Thursday
+
+- Lab 1: Sampling
+
+### Friday
+
+- Quiz: Principles of Data Collection
+
+* * *
+
 ## Week 2
 
 ### Monday
@@ -27,9 +51,6 @@
 - Data Visualization in Practice
 - Short Quiz: Data Visualization
 
-
-
-* * *
 
 ## Week 1
 
