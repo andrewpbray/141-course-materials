@@ -84,7 +84,10 @@ evening, your group is responsible for entering that data into your
 google sheet.
 
 After you have entered in all of your data, please answer the following
-questions.
+questions. Don’t forget to load your data set into your Rmd\! You can
+find the code for that in the chunk of code at the top of this lab. To
+keep things clean for that chunk, use the following R chunk options:
+\`\`\``{r echo = FALSE, eval = TRUE, message = FALSE}`.
 
 5.  Did you encounter any unexpected challenges when collecting this
     data? How did you resolve them?
