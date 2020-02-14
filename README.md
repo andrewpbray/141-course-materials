@@ -19,7 +19,7 @@
 
 ### Thursday
 
-- Lab 1: Sampling
+- Lab 2: Sampling
 
 ### Friday
 
