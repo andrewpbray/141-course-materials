@@ -18,7 +18,7 @@ library(mosaic)
 library(dplyr)
 ```
 
-```{r strat-samp}
+```{r strat-samp, echo = FALSE}
 teams <- c(rep("New York Yankees", 40), 
            rep("San Diego Padres", 40), 
            rep("Seattle Mariners", 40), 
@@ -63,6 +63,12 @@ ggplot(sim, aes(x = mean, fill = method)) +
 
 ---
 # Experimental Design
+
+---
+
+```{r out.width=800, echo = FALSE, fig.align='center'}
+knitr::include_graphics("figs/fisher-nature.png")
+```
 
 ---
 
