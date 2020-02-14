@@ -2,6 +2,35 @@
 
 ![](slides/files/minard.png)
 
+## Week 4
+
+### Monday
+
+- Reading: OI p. 295 - p. 314
+- Probability II
+    - Conditional Probability
+    - Bayes Rule
+
+### Wednesday
+
+- Reading:  OI  p. 315 - p. 323
+- Probability III
+    - Random Variables
+    - Expected Value
+    - Variance
+- PS 3 due tonight at 8 pm
+
+### Thursday
+
+- Lab 3: Wrangling
+
+### Friday
+
+- Quiz: Probability
+- Probability IV
+    - Foundational Probability Distributions
+
+* * *
 
 ## Week 3
 
@@ -24,8 +53,10 @@
 ### Friday
 
 - Quiz: Principles of Data Collection
+- Probability I
+    - Law of Large Numbers
+    - Axioms of Probability
 
-* * *
 
 ## Week 2
 
