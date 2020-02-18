@@ -1,0 +1,303 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fancyhdr,url,hyperref}
+\usepackage{enumerate,multirow}
+
+\oddsidemargin 0in  %0.5in
+\topmargin     0in
+\leftmargin    0in
+\rightmargin   0in
+\textheight    9in
+\textwidth     6in %6in
+
+\pagestyle{fancy}
+
+\lhead{\textsc{MATH 141}}
+\chead{\textsc{Problem Set 3}}
+\lfoot{}
+\cfoot{}
+%\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\newcommand{\ans}{\vspace{0.25in}}
+\newcommand{\R}{{\sf R}\xspace}
+\newcommand{\cmd}[1]{\texttt{#1}}
+
+\title{MATH 141:\\Intro to Probability and Statistics}
+%\date{Fall 2017}
+
+%\rhead{\textsc{Fall 2017}}
+
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+
+\subsection*{Part I}
+
+\begin{enumerate}
+% \item The American Community 
+% Survey is an ongoing survey that provides data every year to give communities the 
+% current information they need to plan investments and services. The 2010 American 
+% Community Survey estimates that 14.6\% of Americans live below the poverty line, 
+% 20.7\% speak a language other than English (foreign language) at home, and 4.2\% 
+% fall into both categories.
+% \begin{enumerate}[(a)]
+% \item Are living below the poverty line and speaking a foreign language at home 
+% disjoint?
+% \item Draw a Venn diagram summarizing the variables and their associated 
+% probabilities.
+% \item What percent of Americans live below the poverty line and only speak 
+% English at home?
+% \item What percent of Americans live below the poverty line or speak a foreign 
+% language at home?
+% \item What percent of Americans live above the poverty line and only speak 
+% English at home? 
+% \item Is the event that someone lives below the poverty line independent of the 
+% event that the person speaks a foreign language at home?
+% \end{enumerate}
+
+
+% \item In parts~(a) and~(b), 
+% identify whether the events are disjoint, independent, or neither (events cannot 
+% be both disjoint and independent).
+% \begin{enumerate}[(a)]
+% \item You and a randomly selected student from your class both earn A's in this 
+% course. 
+% \item You and your class study partner both earn A's in this course.
+% \item If two events can occur at the same time, must they be dependent?
+% \end{enumerate}
+
+
+% \item Data collected at elementary 
+% schools in DeKalb County, GA suggest that each year roughly 25\% of students miss 
+% exactly one day of school, 15\% miss 2 days, and 28\% miss 3 or more days due to 
+% sickness.
+% \begin{enumerate}[(a)]
+% \item What is the probability that a student chosen at random doesn't miss any 
+% days of school due to sickness this year?
+% \item What is the probability that a student chosen at random misses no more than 
+% one day?
+% \item What is the probability that a student chosen at random misses at least one 
+% day?
+% \item If a parent has two kids at a DeKalb County elementary school, what is the 
+% probability that neither kid will miss any school? Note any assumption you must 
+% make to answer this question.
+% \item If a parent has two kids at a DeKalb County elementary school, what is the 
+% probability that both kids will miss some school, i.e. at least one day? Note any 
+% assumption you make.
+% \item If you made an assumption in part~(d) or~(e), do you think it was 
+% reasonable? If you didn't make any assumptions, double check your earlier answers.
+% \end{enumerate}
+
+\item $\mathbb{P}(A) = 0.3$, 
+$\mathbb{P}(B) = 0.7$
+\begin{enumerate}[(a)]
+\item Can you compute $\mathbb{P}(A \text{ and } B)$ if you only know $\mathbb{P}(A)$ and $\mathbb{P}(B)$?
+\item Assuming that events $A$ and $B$ arise from independent random processes,
+\begin{enumerate}[(i)]
+\item what is $\mathbb{P}(A \text{ and } B)$?
+\item what is $\mathbb{P}(A \text{ or } B)$?
+\item what is $\mathbb{P}(A \,|\, B)$?
+\end{enumerate}
+\item If we are given that $\mathbb{P}(A \text{ and } B) = 0.1$, are the random variables giving rise 
+to events $A$ and $B$ independent?
+\item If we are given that $\mathbb{P}(A \text{ and } B) = 0.1$, what is $\mathbb{P}(A \,|\, B)$?
+\end{enumerate}
+
+\item A 2010 Pew Research poll asked 
+1,306 Americans ``From what you've read and heard, is there solid evidence that 
+the average temperature on earth has been getting warmer over the past few 
+decades, or not?". The table below shows the distribution of responses by party 
+and ideology, where the counts have been replaced with relative frequencies.
+\begin{center}
+\begin{tabular}{ll  ccc c} 
+                    &                           & \multicolumn{3}{c}{\textit{Response}} \\
+\cline{3-5}
+                    &                           & Earth is  & Not       & Don't Know    &   \\
+                    &                           & warming   & warming   & Refuse        & Total\\
+\cline{2-6}
+                    & Conservative Republican   & 0.11      & 0.20      & 0.02      & 0.33  \\
+\textit{Party and}  & Mod/Lib Republican        & 0.06      & 0.06      & 0.01      & 0.13 \\
+\textit{Ideology}   & Mod/Cons Democrat         & 0.25      & 0.07      & 0.02      & 0.34 \\
+                    & Liberal Democrat          & 0.18      & 0.01      & 0.01      & 0.20\\
+\cline{2-6}
+                    &Total                      & 0.60      & 0.34      & 0.06      & 1.00
+\end{tabular}
+\end{center}
+\begin{enumerate}[(a)]
+\item Are believing that the earth is warming and being a liberal Democrat mutually 
+exclusive?
+\item What is the probability that a randomly chosen respondent believes the 
+earth is warming or is a liberal Democrat?
+\item What is the probability that a randomly chosen respondent believes the 
+earth is warming given that he is a liberal Democrat?
+\item What is the probability that a randomly chosen respondent believes the 
+earth is warming given that he is a conservative Republican?
+\item Does it appear that whether or not a respondent believes the earth is 
+warming is independent of their party and ideology? Explain your reasoning.
+\item What is the probability that a randomly chosen respondent is a 
+moderate/liberal Republican given that he does not believe that the earth is 
+warming? 
+\end{enumerate}
+
+% \item After an introductory 
+% statistics course, 80\% of students can successfully construct box plots. Of 
+% those who can construct box plots, 86\% passed, while only 65\% of those students 
+% who could not construct box plots passed.
+% \begin{enumerate}[(a)]
+% \item Construct a tree diagram of this scenario.
+% \item Calculate the probability that a student is able to construct a box plot 
+% if it is known that he passed.
+% \end{enumerate}
+
+
+\item Lupus is a medical phenomenon where 
+antibodies that are supposed to attack foreign cells to prevent infections 
+instead see plasma proteins as foreign bodies, leading to a high risk of blood 
+clotting. It is believed that 2\% of the population suffer from this disease. The 
+test is 98\% accurate if a person actually has the disease. The test is 74\% 
+accurate if a person does not have the disease. There is a line from the Fox 
+television show \emph{House} that is often used after a patient tests positive 
+for lupus: ``It's never lupus." Do you think there is truth to this statement? 
+Use appropriate probabilities to support your answer.
+
+
+\item At a university, 13\% of 
+students smoke.
+\begin{enumerate}[(a)]
+\item Calculate the expected number of smokers in a random sample of 100 students 
+from this university.
+\item The university gym opens at 9 am on Saturday mornings. One Saturday morning 
+at 8:55 am there are 27 students outside the gym waiting for it to open. Should 
+you use the same approach from part (a) to calculate the expected number of 
+smokers among these 27 students?
+\end{enumerate}
+
+
+\item Consider the following card game 
+with a well-shuffled deck of cards. If you draw a red card, you win nothing. If 
+you get a spade, you win \$5. For any club, you win \$10 plus an extra \$20 for 
+the ace of clubs.
+\begin{enumerate}[(a)]
+\item Define a random variable that describes the amount you win at this game, with the possible values that it can take along with their probabilities. Also, find 
+the expected winnings for a single game and the standard deviation of the 
+winnings.
+\item What is the maximum amount you would be willing to pay to play this game? 
+Explain your reasoning.
+\end{enumerate}
+
+
+\item An airline charges the following 
+baggage fees: \$25 for the first bag and \$35 for the second. Suppose 54\% of 
+passengers have no checked luggage, 34\% have one piece of checked luggage and 
+12\% have two pieces. We suppose a negligible portion of people check more than 
+two bags.
+\begin{enumerate}[(a)]
+\item Define a random variable that describes the baggage fee revenue for a single passenger, with the possible values that it can take along with their probabilities.  The compute the average revenue per passenger, and 
+compute the corresponding standard deviation.
+\item About how much revenue should the airline expect for a flight of 120 
+passengers? With what standard deviation? Note any assumptions you make and if 
+you think they are justified.
+
+
+% \item \textbf{Reading} Please read this Wikipedia Article: \url{https://en.wikipedia.org/wiki/Monty_Hall_problem}.Were you surprised/incredulous at Marilyn's solution? If you were to explain the solution to a friend, which of the offered explanations do you find the most succinct/convincing?
+
+\end{enumerate}
+
+
+\textbf{Optional Challenge Problem:} A \emph{chord} of a circle is a straight line 
+segment whose endpoints both lie on the circle. For a fixed circle, what is
+the probability that the length of a randomly drawn chord will exceed that
+circle's radius?
+
+\subsection*{Part II}
+
+Inside the \texttt{tidyverse} package is a package called \texttt{dplyr} that has powerful tools for data wrangling. Here you'll get a bit of practice with it on the data that the class collected from the thesis tower last week. First, load the packages and data.
+
+<<echo = TRUE, message = FALSE>>=
+library(tidyverse)
+library(oilabs)
+data(theses)
+@
+
+\item \texttt{arrange()} is a function used to sort a dataframe either numerically or alphabetically. In general, if you want to arrange \texttt{data} by the ascending order of the \texttt{var} variable, the usage is
+
+<<echo = TRUE, eval = FALSE>>=
+data %>%
+  arrange(var)
+@
+
+To reverse the ordering, you simply change \texttt{var} to \texttt{desc(var)}.
+
+Arrange the \texttt{theses} data in descending order based on checkouts (print out both the code and the output, which shows the first 10 rows). Who is this ``best-selling" author? 
+
+\item In the plot below, each colored box represents a thesis and they are laid out on a ``bookshelf" alphabetically by the author's last name.
+
+<<echo=FALSE, fig.height = 4, fig.width = 6>>=
+name_to_bookshelf_x <- function(name_vec, books_per_shelf = 30, shelves_per_case = 5) {
+  n <- length(name_vec)
+  books_per_case <- books_per_shelf * shelves_per_case
+  x_coords <- rep(x = (1:min(n, books_per_shelf)) / (books_per_shelf + 1), 
+                  length.out = n)
+  n_cases <- ceiling(n / (books_per_case))
+  shelf_shift <- rep(0:(n_cases - 1), each = books_per_case)[1:n]
+  (x_coords + shelf_shift)[order(name_vec)]
+}
+
+name_to_bookshelf_y <- function(name_vec, books_per_shelf = 30, shelves_per_case = 5) {
+  n <- length(name_vec)
+  books_per_case <- books_per_shelf * shelves_per_case
+  y_coords_shelf_1 <- rep(x = (shelves_per_case:1)/(shelves_per_case + 1),
+                          each = books_per_shelf)
+  n_cases <- ceiling(n / (books_per_case))
+  y_coords <- rep(y_coords_shelf_1, n_cases)[1:n]
+  y_coords[order(name_vec)]
+}
+
+library(wesanderson)
+
+theses %>%
+  arrange(author_last_name) %>%
+  mutate(division = sample(division),
+         x = name_to_bookshelf_x(author_last_name),
+         y = name_to_bookshelf_y(author_last_name)) %>%
+  ggplot() +
+  geom_tile(aes(x = x,
+                y = y,
+                fill = division), 
+            color = "darkgray") +
+  theme_void() +
+  scale_fill_manual(values = wes_palette("Cavalcanti1"))
+@
+
+Use \texttt{arrange()} to print out the first 10 rows of the dataframe, sorted alphabetically by the author's last name. Use this to verify that the first 10 theses' divisions are the same divisions shown in the upper left corner of the plot.
+
+\item \texttt{filter()} is a function that is used to subset the rows of a data set using logical operators. Create a new data set that contains only the students that identify as scientists.
+
+\item \texttt{mutate()} is a function that creates new variables based on the existing variables in the dataframe. For example, if you wanted to create a new variable called \texttt{sumvars} that was the sum of two of the existing variables, you would use
+
+<<echo = TRUE, eval = FALSE>>=
+data %>%
+  mutate(sumvars = var1 + var2)
+@
+
+Create a new column that stores the number of checkouts per year (from the date of publication until 2020).
+
+\item \texttt{summarize()} is a function used to summarize a column of data with a single number. You can do many at once, as in:
+
+<<echo = TRUE, eval = FALSE>>=
+data %>%
+  summarize(avg = mean(var1),
+            med = median(var1),
+            sd  = mean(var2))
+@
+
+Use this function compute the mean and median number of pages.
+
+\item A final non-wrangling task: visualize the distribution of the number of pages using the geom of your choice.
+
+\end{enumerate}
+
+\end{document}
