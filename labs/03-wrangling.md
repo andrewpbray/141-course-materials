@@ -63,8 +63,8 @@ which is coded according to the following system.
 7.  Each individual airplane can be uniquely identified by its
     tailnumber in the same way that people can be by their social
     security numbers. What is the tailnumber of the fastest plane that
-    flew from one of these airports in 2014? What type of plane is it
-    (google it\!) Be sure to be clear how you’re defining fastest.
+    in the dataset? What type of plane is it (google it\!)? Be sure to
+    be clear how you’re defining fastest.
 
 8.  Which airplane flew the farthest during this year for which we have
     data? How many times around the planet does that translate to?
