@@ -9,6 +9,7 @@
 - Probability V: Foundational Probability Distributions
     - Poisson
     - Normal
+- No problem set this week!
 
 ### Wednesday
 
