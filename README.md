@@ -2,6 +2,28 @@
 
 ![](slides/files/minard.png)
 
+## Week 5
+
+### Monday
+
+- Probability V: Foundational Probability Distributions
+    - Poisson
+    - Normal
+
+### Wednesday
+
+- Exam I
+
+### Thursday
+
+- Lab: Benford's Law
+
+### Friday
+
+- Introduction to Inference: Is Yawning Contagious?
+
+* * *
+
 ## Week 4
 
 ### Monday
@@ -27,8 +49,9 @@
 ### Friday
 
 - Quiz: Probability
-- Probability IV
-    - Foundational Probability Distributions
+- Probability IV: Foundational Probability Distributions
+    - Bernoulli
+    - Binomial
 
 * * *
 
