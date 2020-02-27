@@ -122,14 +122,12 @@ the digits.
 
 6.  Formulate your own statistic to measure the distance between the
     observed proportions (`obs_prop`) and those expected by Benford’s
-    Law (`ben_prop`). This exercise is similar to the first quiz, where
-    you were asked to propose your own statistic to measure variability;
-    there are many many possible choices, but some are more useful than
-    others. Describe this statistic in words (or write out the formula
-    for it if you are comfortable using LaTeX), then calculate it for
-    this data.
+    Law (`ben_prop`). There are many many possible choices, but some are
+    more useful than others. Describe this statistic in words (or write
+    out the formula for it if you are comfortable using LaTeX), then
+    calculate it for this data.
 
-7.  Repeat exerises 5 and 6 for the US state data. Which distribution is
-    judged to be farther from the ideal Benford’s distribution using
+7.  Repeat exercises 5 and 6 for the US state data. Which distribution
+    is judged to be farther from the ideal Benford’s distribution using
     your distance statistic? What do you conclude about the presence of
     fraud in these elections?
