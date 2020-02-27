@@ -1,0 +1,125 @@
+---
+title: "Foundational Distributions II"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "fc-fonts", "reed.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center",
+                      message = FALSE, 
+                      warning = FALSE)
+
+# List of useful packages
+pkg <- c("dplyr", "ggplot2", "knitr")
+
+# Check if packages are not installed and assign the
+# names of the uninstalled packages to the variable new.pkg
+new.pkg <- pkg[!(pkg %in% installed.packages())]
+
+# If there are any packages in the list that aren't installed,
+# install them
+if (length(new.pkg)) {
+  install.packages(new.pkg, repos = "http://cran.rstudio.com")
+}
+
+# Load the packages into the current environment
+library(knitr)
+library(dplyr)
+library(ggplot2)
+
+# Set number of digits to display
+options(digits = 2)
+set.seed(26)
+```
+
+
+# Warm-up
+
+We learn from the HCC that approximately 5% percent of Reed students catch the Reed plague in May. Consider the 350 seniors that will be graduating that month. Let $Y$ be the number of graduating seniors that will have the plague this year.
+
+1. What is the range of values that $Y$ can take?
+2. What is the expected value of $Y$?
+3. What is the standard deviation of the number with the plague (properties of R.V.s, as we did last class to find the expected value)?
+4. What is the probability that none have the plague?
+5. What is the probability that 3 or less have the plague?
+6. What assumptions went into your calculations?
+
+
+---
+# A model
+--
+
+```{r out.width=450, echo = FALSE, fig.align='center'}
+knitr::include_graphics("figs/model-boat.png")
+```
+
+A userful simplification or abstraction of reality.
+    
+    
+---
+# Probability models
+--
+
+![http://ismay.shinyapps.io/ProbApp](http://ismay.shinyapps.io/ProbApp)
+
+
+---
+# Counting Theses
+--
+
+```{r echo = FALSE}
+library(oilabs)
+library(tidyverse)
+data(theses)
+```
+
+```{r echo = FALSE, fig.height = 3}
+ggplot(theses, aes(x = checkouts)) +
+  geom_bar() +
+  theme_bw()
+```
+
+--
+
+```{r eval = FALSE}
+theses %>%
+  summarize(avg_count = mean(checkouts, 
+                             na.rm = TRUE))
+```
+
+--
+
+```{r echo = FALSE}
+theses %>%
+  summarize(avg_count = mean(checkouts, na.rm = TRUE))
+```
+
+
+---
+# Counting Theses
+
+```{r echo = FALSE}
+library(oilabs)
+library(tidyverse)
+data(theses)
+```
+
+```{r echo = FALSE, fig.height = 3}
+ggplot(theses, aes(x = checkouts)) +
+  geom_bar() +
+  theme_bw()
+```
+
+```{r echo = FALSE, fig.height = 3}
+ggplot(transform(data.frame(x=c(0:11)), y=dpois(x, 1.48)), aes(x, y)) + 
+    geom_bar(stat="identity") +
+  theme_bw()
+```
+
