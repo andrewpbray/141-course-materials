@@ -2,6 +2,38 @@
 
 ![](slides/files/minard.png)
 
+## Week 6
+
+### Monday
+
+- Reading: OI p. 61 - 81
+- Hypothesis Testing via Randomization
+    - Hypotheses
+    - p-values
+
+### Wednesday
+
+- Hypothesis Testing by other means, I
+    - Simulation
+    - Exact Probability
+    - Normal Distribution
+
+### Thursday
+
+Lab: Infer
+
+
+### Friday
+
+- Hypothesis Testing by other means, II
+    - Simulation
+    - Exact Probability
+    - Normal Distribution
+
+
+
+* * *
+
 ## Week 5
 
 ### Monday
