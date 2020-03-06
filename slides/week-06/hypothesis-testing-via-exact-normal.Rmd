@@ -1,0 +1,156 @@
+---
+title: "Hypothesis Testing via Exact Probability and the Normal Approximation"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "fc-fonts", "reed.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+options(digits=2)
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(infer)
+library(oilabs)
+data(millenials)
+```
+
+# Recap from last time . . .
+
+---
+# The Hypotheses
+
+Let $p$ be the true proportion of Americans who favor same-sex marriage.
+
+$$H_0: p = 0.5$$
+
+$$H_A: p \ne 0.5$$
+
+---
+# The Data
+
+--
+
+```{r phat, eval = FALSE}
+p_hat <- millenials %>%
+  specify(response = response,
+          success = "favor") %>%
+  calculate(stat = "prop")
+p_hat
+```
+
+--
+
+```{r ref.label="phat", echo = FALSE}
+p_hat <- millenials %>%
+  specify(response = favor, 
+          success = "favor") %>%
+  calculate(stat = "prop")
+p_hat
+```
+
+---
+# The Data, cont.
+
+--
+
+```{r fig.align='center', fig.height = 5}
+millenials %>%
+  ggplot(aes(x = response)) +
+  geom_bar()
+```
+
+
+---
+# Visualizing the Null
+
+--
+
+```{r null, eval = FALSE}
+null <- millenials %>%
+  specify(response = response, 
+          success = "favor") %>%
+  hypothesize(null = "point", p = .5) %>%
+  generate(reps = 10000, type = "simulate") %>%
+  calculate(stat = "prop")
+null %>%
+  visualize() +
+  shade_p_value(obs_stat = p_hat,   #<<
+                direction = "both") #<<
+```
+
+--
+
+```{r ref.label = "null", echo = FALSE, fig.align='center', fig.height=3.2}
+null <- millenials %>%
+  specify(response = response, success = "favor") %>%
+  hypothesize(null = "point", p = .5) %>%
+  generate(reps = 10000, type = "simulate") %>%
+  calculate(stat = "prop")
+null %>%
+  visualize() +
+  shade_p_value(obs_stat = p_hat,
+                direction = "both")
+```
+
+
+---
+# Computing a p-value
+
+--
+
+```{r getpval, eval = FALSE}
+null %>%
+  get_p_value(obs_stat = p_hat,   #<<
+              direction = "both") #<<
+```
+
+--
+
+```{r ref.label = "getpval", echo = FALSE}
+null %>%
+  get_p_value(obs_stat = p_hat,   #<<
+              direction = "both") #<<
+```
+
+
+---
+# Exact and Approximate
+
+
+---
+# The Normal Distribution in R
+
+If you have a quantile and need a `p`robability...
+
+--
+
+```{r}
+pnorm(q = -1, mean = 0, sd = 1)
+```
+
+--
+
+```{r}
+pnorm(q = 2.9, mean = 3.1, sd = .2)
+```
+
+--
+
+If you have a probability and need a `q`uantile...
+
+--
+
+```{r}
+qnorm(.15)
+```
+

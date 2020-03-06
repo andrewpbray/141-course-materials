@@ -15,8 +15,6 @@
 
 - Hypothesis Testing by other means, I
     - Simulation
-    - Exact Probability
-    - Normal Distribution
 
 ### Thursday
 
@@ -25,6 +23,7 @@ Lab: Infer
 
 ### Friday
 
+- Reading: OI p. 81 - 98
 - Hypothesis Testing by other means, II
     - Simulation
     - Exact Probability
