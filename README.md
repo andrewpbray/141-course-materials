@@ -2,6 +2,34 @@
 
 ![](slides/files/minard.png)
 
+
+## Week 7
+
+### Monday
+
+- Reading: OI p. 99 - 102
+- Practice with the Normal Distribution
+- Statistical Errors and Power
+
+### Wednesday
+
+- Reading: OI p. 123 - 128
+- Confidence Intervals on Proportions
+
+### Thursday
+
+Lab: CIs on proportions
+
+
+### Friday
+
+- Reading: OI p. 128 - 134
+- Quiz: Inference / `library(infer)`
+- Confidence Intervals on a Difference in Proportions
+    
+
+* * *
+
 ## Week 6
 
 ### Monday
@@ -28,7 +56,6 @@ Lab: Infer
     - Simulation
     - Exact Probability
     - Normal Distribution
-
 
 
 * * *
