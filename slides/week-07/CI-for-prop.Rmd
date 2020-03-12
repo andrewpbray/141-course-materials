@@ -120,15 +120,14 @@ pew %>%
 ```
 
 ---
-# Bootstrapping p-hat III
+# Bootstrapping p-hat IV
 
 ```{r}
 boot_se <- pew %>% #<<
   specify(response = closed, success = "yes") %>%
   generate(reps = 100, type = "bootstrap") %>%
   calculate(stat = "prop") %>%
-  summarize(se = sd(stat)) %>% #<<
-  pull() #<<
+  summarize(se = sd(stat))
 ```
 
 --
@@ -148,8 +147,7 @@ $$ \hat{p} \pm 1.96 \times SE $$
 ```{r}
 p_hat <- pew %>%
   specify(response = closed, success = "yes") %>%
-  calculate(stat = "prop") %>%
-  pull()
+  calculate(stat = "prop")
 ```
 
 --
@@ -163,6 +161,50 @@ p_hat
 ```{r}
 c(p_hat - 1.96 * boot_se, p_hat + 1.96 * boot_se)
 ```
+
+
+---
+# Bootstrapping p-hat V
+
+```{r}
+boot <- pew %>% 
+  specify(response = closed, success = "yes") %>%
+  generate(reps = 100, type = "bootstrap") %>%
+  calculate(stat = "prop")
+```
+
+--
+
+```{r}
+ci <- boot %>%
+  get_ci(point_estimate = p_hat,
+         level = .95,
+         type = "se")
+```
+
+--
+
+```{r}
+ci
+```
+
+---
+# Bootstrapping p-hat V
+
+```{r eval = FALSE}
+boot %>%
+  visualize() +
+  shade_ci(ci)
+```
+
+--
+
+```{r echo = FALSE, fig.align="center", fig.height=4}
+boot %>%
+  visualize() +
+  shade_ci(ci)
+```
+
 
 ---
 # 
