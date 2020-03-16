@@ -18,7 +18,12 @@ library(infer)
 set.seed(314)
 ```
 
-## Ex: Diversity at Reed
+# Inference for Categorical Data
+
+
+---
+# Ex: Diversity at Reed
+--
 
 ```{r out.width=550, echo = FALSE, fig.align='center'}
 knitr::include_graphics("figs/diversity-reed.png")
