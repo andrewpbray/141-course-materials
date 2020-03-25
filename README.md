@@ -2,6 +2,26 @@
 
 ![](slides/files/minard.png)
 
+## Week 8
+
+### Monday
+
+- Chi-squared Goodness of Fit
+
+### Wednesday
+
+- Class Cancelled
+
+### Thursday
+
+- Class Cancelled
+
+
+### Friday
+
+- Class Cancelled
+
+* * *
 
 ## Week 7
 
@@ -26,7 +46,6 @@ Lab: CIs on proportions
 - Reading: OI p. 128 - 134
 - Quiz: Inference / `library(infer)`
 - Confidence Intervals on a Difference in Proportions
-    
 
 * * *
 
