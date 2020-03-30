@@ -2,6 +2,155 @@
 
 ![](slides/files/minard.png)
 
+
+## Week 9
+
+A note on readings: in class we cover two different methods of doing inference. We often lead out with the computational approach (tests through permutation and simulation, intervals through bootstrapping) then cover the classical approximation approach (the normal distribution, the chi-squared distribution). OpenIntro has a strong emphasis on the classical methods. If you'd like more review of the computational methods, see the analogous chapters in A Modern Dive.
+
+### Monday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 163 - 173
+- Inference for one mean: the t-test
+
+### Wednesday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 173 - 184
+- Inference for two means
+- PS 6 due 8 pm via gradescope
+
+### Thursday
+
+- [Join class](https://zoom.us/j/190094857)
+- Lab TBA
+
+### Friday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 184 - 195
+- Inference for many means: ANOVA
+
+* * *
+
+## Week 10
+
+### Monday
+
+- [Join class](https://zoom.us/j/190094857)
+- Taxonomy of Data / Taxonomy of Inference
+- Exam II distributed Tuesday morning, due via gradescope Thursday at noon.
+
+### Wednesday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 219 - 227
+- Simple Linear Regression
+    - The linear model
+    - Residuals
+
+### Thursday
+
+- [Join class](https://zoom.us/j/190094857)
+- Lab: Least Squares Regression
+
+### Friday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 227 - 238
+- Simple Linear Regression II
+    - Estimating the line of best fit
+
+* * *
+
+## Week 11
+
+### Monday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 238 - 243
+- Simple Linear Regression III
+    - Inference
+
+### Wednesday
+
+- [Join class](https://zoom.us/j/190094857)
+- Outliers
+    - Residual
+    - Leverage
+    - Influence
+
+### Thursday
+
+- [Join class](https://zoom.us/j/190094857)
+- Lab: Inference for Regression
+
+### Friday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 184 - 195
+- ANCOVA
+
+* * *
+
+## Week 12
+
+### Monday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 261 - 266
+- Multiple Linear Regression I
+    - Geometry
+
+### Wednesday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 184 - 195
+- Multiple Linear Regression II
+    - Residual plots
+
+### Thursday
+
+- [Join class](https://zoom.us/j/190094857)
+- Lab: Multiple Regression
+
+### Friday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 184 - 195
+- Multiple Linear Regression III
+    - Multicollinearity
+
+* * *
+
+## Week 13
+
+### Monday
+
+- [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 184 - 195
+- Generalized Linear Models I
+    - Logistic Regression
+
+### Wednesday
+
+- [Join class](https://zoom.us/j/190094857)
+- Generalized Linear Models II
+    - Poisson Regression
+
+### Thursday
+
+- [Join class](https://zoom.us/j/190094857)
+- Lab: Poisson Regression
+
+### Friday
+
+- [Join class](https://zoom.us/j/190094857)
+- Bayesian Estimation
+
+* * *
+* * *
+
 ## Week 8
 
 ### Monday
