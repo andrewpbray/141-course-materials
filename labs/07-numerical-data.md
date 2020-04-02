@@ -56,7 +56,7 @@ glimpse(yrbss)
 You will first start with analyzing the weight of the participants in
 kilograms: `weight`.
 
-1.  Using visualization and summary statistics, describe the
+2.  Using visualization and summary statistics, describe the
     distribution of weights. Also note how many missing observations
     there are (R codes missing data as `NA`). The `summary` function can
     be useful.
