@@ -83,7 +83,8 @@ yrbss <- yrbss %>%
 
 3.  Make a side-by-side boxplot of `physical_3plus` and `weight`. Is
     there a relationship between these two variables? What did you
-    expect and why?
+    expect and why? (hint: `ggplot2` prefers the boxplots to be
+    vertical).
 
 The box plots show how the medians of the two distributions compare, but
 we can also compare the means of the distributions using the following
@@ -172,9 +173,9 @@ null %>%
     different for those who exercise at least three times a week and
     those who don’t.
 
-8.  Now, a non-inference task: Determine the number of different options
-    there are in the dataset for the `hours_tv_per_school_day` there
-    are.
+8.  Now, a non-inference question: How many unique answers are there in
+    the dataset to the question regarding television viewing?
+    (`hours_tv_per_school_day`)
 
 9.  Come up with a research question evaluating the relationship between
     height or weight and sleep. Formulate the question in a way that it
