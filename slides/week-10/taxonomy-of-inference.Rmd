@@ -1,0 +1,48 @@
+---
+title: "Taxonomy of Inference"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "fc-fonts", "reed.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+---
+
+# Recall: Taxonomy of Data
+
+---
+# Taxonomy of Inference
+
+---
+# Categorical Data
+
+---
+# $X$: One 2-level categorical variable
+
+---
+# Recall: There is only one test
+
+---
+# $Y$: One > 2-level categorical variable
+
+---
+# $X_1 \sim X_2$: Two 2-level categorical variables
+
+---
+# $Y_1 \sim Y_2$: Two > 2-level categorical variables
+
+---
+# Numerical Data
+
+---
+# $W$: One numerical variable
+
+---
+# $W \sim X$: One numerical, one 2-level categorical variable
+
+---
+# $W \sim Y$: One numerical, one > 2-level categorical variable
+
