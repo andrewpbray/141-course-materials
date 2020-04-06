@@ -13,13 +13,16 @@ Recall the following notation:
 
 For each of the following problems, 
 
-  - identify the model type (e.g., $X_1 \sim X_2$),
-  - determine which type of problem it is (One Mean, One Proportion..., Multiple Proportions (Test of Independence))
-  - draw a sketch of an effective visualization and give the name of that type of plot,
-  - write the null and alternative hypotheses, and
-  - assuming conditions are met, provide the named distribution (e.g., $t(df = 22)$) that could be used to approximate the null distribution.
-  - write out pseudo R code to approximate the null distribution using a computational technique: permutation or simulation. Note that you'll have to come up with sensible names for the data set and variables.
+  a. identify the model type (e.g., $X_1 \sim X_2$),
+  b. sketch out what the data frame might look like (you'll have to come up with sensible names for the data set and variables),
+  c. draw a sketch of an effective visualization, give the name of that type of plot, and provide pseudo R-code to create that plot using ggplot2,
+  d. determine the most common type of hypothesis test for this sort of data,
+  e. write the null and alternative hypotheses, and
+  f. assuming conditions are met, provide the named distribution (e.g., $t(df = 22)$) that could be used to approximate the null distribution.
+  g. write out pseudo R code to approximate the null distribution using a computational technique: permutation or simulation (use the same names as is part b).
 
+
+* * *
 <!-- %Two paired means -->    
 
 1. During labor, mothers whose fetuses show abnormal heart rate patterns are often administered oxygen in the hope of increasing the percentage of oxygen in the blood of the fetus.  A recent study recorded this fetal oxygen for 24 mothers whose fetuses showed abnormal heart patterns.  These measurements were taken with room air as the baseline (statistic of 43.54) and after administering 40% oxygen to the mother (statistic of 48.42). Test whether fetus oxygen levels were significantly different, on average, after the mother was administered 40% oxygen than at baseline.
