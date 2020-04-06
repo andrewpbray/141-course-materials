@@ -41,7 +41,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 - Taxonomy of Data / Taxonomy of Inference
     - [Video 1](https://zoom.us/rec/share/5fNRJJLc-V1JGYmQ1B3lBYMeIaXHT6a82iAe__tbmB5r6Sg6bBCSoziyHTWT7m7m?startTime=1586106153000)
     - [Video 2](https://zoom.us/rec/share/5fNRJJLc-V1JGYmQ1B3lBYMeIaXHT6a82iAe__tbmB5r6Sg6bBCSoziyHTWT7m7m?startTime=1586108379000)
-- Exam II distributed Tuesday morning, due via gradescope Thursday at noon.
+- Exam II distributed Tuesday morning 10 am, due via gradescope Thursday at noon.
 
 ### Wednesday
 
