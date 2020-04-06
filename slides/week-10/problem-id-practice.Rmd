@@ -15,11 +15,11 @@ For each of the following problems,
 
   a. identify the model type (e.g., $X_1 \sim X_2$),
   b. sketch out what the data frame might look like (you'll have to come up with sensible names for the data set and variables),
-  c. draw a sketch of an effective visualization, give the name of that type of plot, and provide pseudo R-code to create that plot using ggplot2,
+  c. draw a sketch of an effective visualization, give the name of that type of plot, and provide pseudo R-code to create that plot using ggplot2 (use the same names as in part b),
   d. determine the most common type of hypothesis test for this sort of data,
   e. write the null and alternative hypotheses, and
   f. assuming conditions are met, provide the named distribution (e.g., $t(df = 22)$) that could be used to approximate the null distribution.
-  g. write out pseudo R code to approximate the null distribution using a computational technique: permutation or simulation (use the same names as is part b).
+  g. write out pseudo R code to approximate the null distribution using a computational technique: permutation or simulation (use the same names as in part b).
 
 
 * * *
