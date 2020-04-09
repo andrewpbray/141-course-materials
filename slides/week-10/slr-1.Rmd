@@ -1,0 +1,132 @@
+---
+title: "Simple Linear Regression"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "fc-fonts", "reed.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+options(digits=3)
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center", fig.height = 6.5, fig.width = 9)
+library(ggrepel)
+library(tidyverse)
+```
+
+# Poverty and Graduation
+--
+
+.tiny[
+```{r echo = FALSE}
+poverty <- read.delim("../files/poverty.txt", header = TRUE)
+head(poverty, n = 8)
+```
+]
+
+---
+# Poverty and Graduation
+--
+
+```{r echo = FALSE}
+p1 <- ggplot(poverty, aes(x = Poverty, y = Graduates)) +
+  theme_bw(base_size = 14) +
+  geom_point()
+p1
+```
+
+
+---
+# Poverty and Graduation
+
+```{r echo=FALSE}
+p2 <- p1 +
+  geom_text_repel(aes(label = State))
+p2
+```
+
+---
+# Simple Linear Regression: $W_1 \sim W_2$
+
+
+---
+# The Correlation Coefficient
+
+
+---
+# The Correlation Coefficient in R
+
+```{r cor, eval = FALSE}
+poverty %>%
+  summarize(cor(Graduates, Poverty))
+```
+
+--
+
+```{r ref.label = "cor", echo = FALSE}
+poverty %>%
+  summarize(cor(Graduates, Poverty))
+```
+
+
+---
+# The Linear Model
+
+---
+# The Linear Model in R
+--
+
+```{r lm, eval = FALSE}
+lm(Graduates ~ Poverty, data = poverty)
+```
+
+--
+
+```{r ref.label = "lm", echo = FALSE}
+lm(Graduates ~ Poverty, data = poverty)
+```
+
+
+---
+# Poverty and Graduation
+--
+
+```{r echo=FALSE}
+p2 +
+  geom_smooth(method='lm',formula=y~x, se = FALSE)
+```
+
+
+---
+# Residuals
+
+---
+# Residuals in R
+
+```{r}
+m1 <- lm(Graduates ~ Poverty, data = poverty)
+attributes(m1)
+m1$fitted
+```
+
+---
+# Residuals in R, cont.
+
+```{r}
+m1$residuals
+```
+
+
+---
+# Residual plot
+
+```{r}
+m1 <- lm(Graduates ~ Poverty, data = poverty)
+plot(m1, 1)
+```
+
