@@ -1,4 +1,4 @@
-Lab 9: Simple Linear Regression
+Lab 8: Simple Linear Regression
 ================
 
 ## Batter up
@@ -56,16 +56,6 @@ mlb11 %>%
 
 ## Sum of squared residuals
 
-<div id="boxedtext">
-
-In this section you will use an interactive function to investigate what
-we mean by “sum of squared residuals”. You will need to run this
-function in your console, not in your markdown document. Running the
-function also requires that the `mlb11` dataset is loaded in your
-environment.
-
-</div>
-
 Think back to the way that we described the distribution of a single
 variable. Recall that we discussed characteristics such as center,
 spread, and shape. It’s also useful to be able to describe the
@@ -81,7 +71,8 @@ Just as we used the mean and standard deviation to summarize a single
 variable, we can summarize the relationship between these two variables
 by finding the line that best follows their association. Use the
 following interactive function to select the line that you think does
-the best job of going through the cloud of points.
+the best job of going through the cloud of points (*note: you’ll want to
+run this function in the console, not in your Rmd*).
 
 ``` r
 plot_ss(x = at_bats, y = runs, data = mlb11)
