@@ -1,0 +1,320 @@
+---
+title: "SLR to MLR"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "fc-fonts", "reed.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-forest-light
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+options(digits=3)
+knitr::opts_chunk$set(echo = TRUE, fig.align='center', fig.height = 6, fig.width = 8)
+library(dplyr)
+library(ggplot2)
+library(oilabs)
+library(openintro)
+```
+
+# Example: shipping books
+--
+
+```{r out.width=480, echo = FALSE}
+knitr::include_graphics("figs/pile-of-books.jpg")
+```
+
+When you buy a book off of Amazon, you get a quote for how much it
+costs to ship. This is based on the weight of the book. If you
+didn't know the weight a book, what other characteristics of it
+could you measure to help predict weight?
+
+```{r getdata, echo = FALSE, message=FALSE}
+library(DAAG)
+data(allbacks)
+books <- allbacks[, c(3, 1, 4)]
+```
+
+
+---
+# Shipping books visualized
+--
+
+```{r plotallbacks, echo = FALSE, fig.width=9, fig.height = 6.7}
+p1 <- ggplot(books, aes(x = volume, y = weight)) +
+  geom_point(size = 3) +
+  theme_bw(base_size = 18)
+p1
+```
+
+
+---
+# Shipping books visualized, cont.
+
+```{r fitm1, echo = FALSE}
+m1 <- lm(weight ~ volume, data = books)
+```
+
+```{r plotallbackswline, fig.width=9, fig.height = 6.7, echo = FALSE}
+p1 + 
+  geom_abline(intercept = m1$coef[1], slope = m1$coef[2], col = "orchid")
+```
+
+
+---
+class: small
+# Fitting the linear model
+--
+
+```{r lm, eval = FALSE}
+m1 <- lm(weight ~ volume, data = books)
+summary(m1)
+```
+
+--
+
+```{r ref.label = "lm", echo = FALSE}
+m1 <- lm(weight ~ volume, data = books)
+summary(m1)
+```
+
+
+---
+# Q1: What is the equation for the line?
+--
+
+$$ \hat{y} = 107.7 + 0.708 x $$
+
+$$ \widehat{weight} = 107.7 + 0.708 volume $$
+
+---
+# Q2: Does this appear to be a reasonable setting to apply linear regression?
+--
+
+We need to check:
+
+1. Linear trend
+2. Independent observations
+3. Normal residuals
+4. Equal variance
+
+
+---
+# Residual Plot
+--
+
+```{r resplot, fig.width=9, fig.height = 6.7, echo = FALSE}
+ggplot(m1, aes(x = .fitted, y = .resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  xlab("Fitted values") +
+  ylab("Residuals")
+```
+
+
+---
+# QQ plot
+--
+
+```{r resplot2, warning=FALSE, fig.width=9, fig.height = 6.7, echo = FALSE}
+ggplot(m1, aes(sample = .resid)) +
+  geom_point(stat = "qq")
+```
+
+
+---
+class: small
+# Q3: Is volume a significant predictor?
+--
+
+```{r sumtable}
+summary(m1)
+```
+
+Q4: How much of the variation in weight is explained by the model containing volume?
+
+
+---
+# Multiple Regression
+--
+
+Allows us create a model to explain one $numerical$ variable, the response, as a linear function of many explanatory variables that can be both $numerical$ and
+$categorical$.
+
+--
+
+We posit the true model:
+
+$$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p + \epsilon; \quad \epsilon \sim N(0, \sigma^2) $$
+
+We use the data to estimate our fitted model:
+
+$$ \hat{Y} = b_0 + b_1 X_1 + b_2 X_2 + \ldots + b_p X_p $$
+
+---
+# Estimating $\beta_0, \beta_1$ etc.
+--
+
+In least-squares regression, we're still finding the estimates that minimize
+the sum of squared residuals.
+
+$$ e_i = y_i - \hat{y}_i $$
+
+$$ \sum_{i = 1}^n e_i^2 $$
+
+And yes, they have a closed-form solution.
+
+$$ \mathbf{b} = (X'X)^{-1}X'Y $$
+
+--
+
+In R:
+```{r eval = FALSE}
+lm(Y ~ X1 + X2 + ... + Xp, data = mydata)
+```
+
+
+---
+# Example: shipping books
+--
+
+```{r plotcolors, echo = FALSE}
+p2 <- ggplot(books, aes(x = volume, y = weight, color = cover)) +
+  geom_point(size = 3) +
+  theme_bw(base_size = 18)
+p2
+```
+
+
+---
+# Example: shipping books
+--
+
+```{r}
+m2 <- lm(weight ~ volume + cover, data = books)
+summary(m2)
+```
+
+---
+# How do we interpret these estimates?
+
+Think about the geometry of the model.
+
+
+
+
+---
+# Example: shipping books
+--
+
+```{r echo = FALSE}
+p3 <- p2 +
+  geom_abline(intercept = m2$coef[1], slope = m2$coef[2], col = 2) +
+  geom_abline(intercept = m2$coef[1] + m2$coef[3], slope = m2$coef[2], col = 4)
+p3
+```
+
+
+---
+# MLR slope interpretation
+--
+
+The slope corresponding to the dummy variable tell us:
+
+- How much vertical separation there is between our lines
+- How much `weight` is expected to increase if `cover` goes
+from 0 to 1 and `volume` is left unchanged.
+
+Each $b_i$ tells you how much you expect the $Y$ to change when you change the
+$X_i$, while **holding all other variables constant**.
+
+
+---
+class:small
+# Your turn 1
+--
+
+```{r}
+summary(m2)
+```
+
+- Is the difference between cover types significant?
+- How much of the variation in weight is explained by a model containing both
+volume and cover?
+
+
+---
+class:small
+# Your turn 2
+--
+
+```{r}
+summary(m2)$coef
+qt(.025, df = nrow(books) - 3)
+```
+
+Which of the follow represents the appropriate 95% CI for `coverpb`?
+
+1. $197 \pm 1.96 \times 59.19$
+2. $-184 \pm 2.18 \times 40.5$
+3. $-184 \pm -4.55 \times 40.5$
+
+
+---
+# Extending the model
+--
+
+```{r echo = FALSE}
+p3
+```
+
+The two cover types have different intercepts. Do they share the same slope?
+
+
+---
+# Extending the model
+
+Think about the geometry.
+
+---
+# Extending the model
+
+```{r echo = FALSE}
+p2 +
+  stat_smooth(method = "lm", se = FALSE)
+```
+
+
+---
+class:small
+# Interaction terms
+--
+
+```{r}
+m3 <- lm(weight ~ volume + cover + volume:cover, 
+         data = books)
+summary(m3)
+```
+
+Do we have evidence that two types of books have different relationships
+between volume and weight?
+
+
+---
+# Take home messages
+--
+
+- There is a statistically significant relationship between volume and weight.
+- There is a statistically significant difference in weight between paperback
+and hardcover books, when controlling for volume.
+- There is no strong evidence that the relationship between volume and weight
+differs betwen paperbacks and hardbacks.
+
+This is **inference**, which required **valid models**. We'll check diagnostics 
+next time.
+
+
