@@ -77,21 +77,24 @@ A note on readings: in class we cover two different methods of doing inference. 
 ### Wednesday
 
 - [Join class](https://zoom.us/j/190094857)
-- Outliers
-    - Residual
-    - Leverage
-    - Influence
+- Reading: OI p. 184 - 195
+- ANCOVA
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 ### Thursday
 
 - [Join class](https://zoom.us/j/190094857)
 - Lab: Inference for Regression
+- [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Friday
 
 - [Join class](https://zoom.us/j/190094857)
-- Reading: OI p. 184 - 195
-- ANCOVA
+- Outliers
+    - Residual
+    - Leverage
+    - Influence
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 * * *
 
@@ -103,6 +106,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 - Reading: OI p. 261 - 266
 - Multiple Linear Regression I
     - Geometry
+- [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Wednesday
 
@@ -110,11 +114,13 @@ A note on readings: in class we cover two different methods of doing inference. 
 - Reading: OI p. 184 - 195
 - Multiple Linear Regression II
     - Residual plots
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 ### Thursday
 
 - [Join class](https://zoom.us/j/190094857)
 - Lab: Multiple Regression
+- [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Friday
 
@@ -122,6 +128,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 - Reading: OI p. 184 - 195
 - Multiple Linear Regression III
     - Multicollinearity
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 * * *
 
@@ -133,22 +140,27 @@ A note on readings: in class we cover two different methods of doing inference. 
 - Reading: OI p. 184 - 195
 - Generalized Linear Models I
     - Logistic Regression
+- [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Wednesday
 
 - [Join class](https://zoom.us/j/190094857)
 - Generalized Linear Models II
     - Poisson Regression
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 ### Thursday
 
 - [Join class](https://zoom.us/j/190094857)
 - Lab: Poisson Regression
+- [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Friday
 
 - [Join class](https://zoom.us/j/190094857)
 - Bayesian Estimation
+- [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
+
 
 * * *
 * * *
