@@ -90,6 +90,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 ### Friday
 
 - [Join class](https://zoom.us/j/190094857)
+- Reading: OI p. 261 - 266
 - Outliers
     - Residual
     - Leverage
