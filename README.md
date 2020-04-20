@@ -91,10 +91,9 @@ A note on readings: in class we cover two different methods of doing inference. 
 
 - [Join class](https://zoom.us/j/190094857)
 - Reading: OI p. 261 - 266
-- Outliers
-    - Residual
-    - Leverage
-    - Influence
+- Multiple Linear Regression I
+    - Geometry
+
 - [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 * * *
@@ -104,17 +103,20 @@ A note on readings: in class we cover two different methods of doing inference. 
 ### Monday
 
 - [Join class](https://zoom.us/j/190094857)
-- Reading: OI p. 261 - 266
-- Multiple Linear Regression I
-    - Geometry
+- Reading: OI p. 271-275
+- Review: t-test
+- Outliers
+    - Residual
+    - Leverage
+    - Influence
 - [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
 
 ### Wednesday
 
 - [Join class](https://zoom.us/j/190094857)
-- Reading: OI p. 184 - 195
+- Reading: OI p. 265 - 261
 - Multiple Linear Regression II
-    - Residual plots
+    - Model Selection
 - [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
 ### Thursday
@@ -128,6 +130,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 - [Join class](https://zoom.us/j/190094857)
 - Reading: OI p. 184 - 195
 - Multiple Linear Regression III
+    - Recoding variables
     - Multicollinearity
 - [Join Office Hours (3 - 5 pm)](https://zoom.us/j/759760558)
 
@@ -138,7 +141,7 @@ A note on readings: in class we cover two different methods of doing inference. 
 ### Monday
 
 - [Join class](https://zoom.us/j/190094857)
-- Reading: OI p. 184 - 195
+- Reading: OI p. 275-284
 - Generalized Linear Models I
     - Logistic Regression
 - [Join Evening Help (7 - 9 pm)](https://zoom.us/j/3419767082)
