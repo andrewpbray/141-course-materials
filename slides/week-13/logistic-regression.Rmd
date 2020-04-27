@@ -109,6 +109,9 @@ a single stronger model?
 
 
 ---
+# Logistic Regression
+
+---
 
 ```{r out.width=800, echo = FALSE}
 knitr::include_graphics("figs/good-bad.jpg")
