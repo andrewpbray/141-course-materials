@@ -30,7 +30,7 @@ old_theses <- read.csv("https://raw.githubusercontent.com/intro-stats/141-course
 
 ### Exploratory Data Analysis
 
-Let’s start with an investigation of `theses`, the data data that you
+Let’s start with an investigation of `theses`, the data that you
 collected at the beginning of the semester.
 
 2.  Create three visualizations that help you learn about the phenomenon
