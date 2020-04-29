@@ -30,6 +30,9 @@ old_theses <- read.csv("https://raw.githubusercontent.com/intro-stats/141-course
 
 ### Exploratory Data Analysis
 
+Let’s start with an investigation of `theses`, the data data that you
+collected at the beginning of the semester.
+
 2.  Create three visualizations that help you learn about the phenomenon
     of senior thesis checkouts. As a reminder, here is a tool kit of
     `ggplot()` layers that you’ve used before:
