@@ -109,9 +109,9 @@ published, but rather its `age`.
 
 ``` r
 ggplot(theses, aes(x = age, y = checkouts)) +
-  geom_point() +
-  stat_function(fun = function(age) {coef(m1)[1] + coef(m2)[2] * age},
-                color = "red", lwd = 2) +
+  geom_jitter() +
+  stat_function(fun = function(age) {coef(m1)[1] + coef(m1)[2] * age},
+                color = "green", lwd = 2) +
   stat_function(fun = function(age) {exp(coef(m2)[1] + 
                                            coef(m2)[2] * age)},
                 color = "red", lwd = 2) +
