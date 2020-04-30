@@ -75,3 +75,51 @@ For each one, please:
 
 4.  Pose and answer an additional question (that doesn’t involve
     regression).
+
+### Regression
+
+While estimating the average number of checkouts of a thesis is useful,
+we have a strong intuition that the older that the thesis is, the more
+chances it will have to be checkout out. This has us thinking in a
+regression setting now, and not about the `year` that a thesis is
+published, but rather its `age`.
+
+5.  Add a new variable to your dataframe that records the `age` of each
+    thesis.
+
+6.  Construct a scatterplot of the relationship between the number of
+    checkouts and the age of a thesis. Describe the relationship that
+    you see.
+
+7.  Fit a least-squares regression model to this data and call it `m1`.
+    Do you find evidence of a significant relationship between the age
+    of a thesis and the number of checkouts?
+
+8.  Create a residual plot and a qq-plot for this model. How much
+    confidence does this give you about the validity of this model and
+    the accuracy of the p-values?
+
+9.  Fit a Poisson regression model called `m2` that predicts checkouts
+    using age. Use the following code to plot both the Poisson
+    regression (in red) and the least squares regression (in green) on
+    the same scatterplot. Which model better describes the structure in
+    the scatterplot?
+
+<!-- end list -->
+
+``` r
+ggplot(theses, aes(x = age, y = checkouts)) +
+  geom_point() +
+  stat_function(fun = function(age) {coef(m1)[1] + coef(m2)[2] * age},
+                color = "red", lwd = 2) +
+  stat_function(fun = function(age) {exp(coef(m2)[1] + 
+                                           coef(m2)[2] * age)},
+                color = "red", lwd = 2) +
+  theme_bw()
+```
+
+10. Does this second model find a significant relationship between the
+    age of a thesis and the number of checkouts?
+
+11. Fit a third Poisson regression model that uses the `old_theses` data
+    instead of your `theses` data. How do your conclusions change?
