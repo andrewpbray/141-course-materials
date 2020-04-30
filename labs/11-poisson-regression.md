@@ -121,5 +121,9 @@ ggplot(theses, aes(x = age, y = checkouts)) +
 10. Does this second model find a significant relationship between the
     age of a thesis and the number of checkouts?
 
-11. Fit a third Poisson regression model that uses the `old_theses` data
-    instead of your `theses` data. How do your conclusions change?
+11. I spoke with the librarians and it turns out that it is only since
+    1994 that theses have been in circulation and had their checkouts
+    logged. Create a new dataset called `new_theses` that only contains
+    those that were written since 1994. Refit both models (you should be
+    able to copy and paste your code) and remake the plot from exercise
+    9. How does this change your conclusion?
